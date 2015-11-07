@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yogurt Up</title>
+</head>
+<body onresize="resize_canvas()">
+	
+	<div id="parameters">
+		<h1>General pyramid param</h1>
+ 		<p>
+			<label class="field" for="pyramid_initial_height">Pyramid initial height [<em>mm</em>]:</label>
+			<input id="pyramid_initial_height" type ="input" value="6"/>
+		</p>	        
+ 		<p>
+			<label class="field" for="travel_feedrate">Travel feedrate [<em>mm/min</em>]:</label>
+			<input id="pyramid_initial_height" type ="input" value="6000"/>
+		</p>
+    <p>
+			<label class="field" for="travel_z_lift">Travel Z lift [<em>mm</em>]:</label>
+			<input id="travel_z_lift" type ="input" value="5"/>
+		</p>
+    
+		<h1>Dots param</h1>
+		<p>
+			<label class="field" for="dots_per_side">Dots per side:</label>
+			<input id="dots_per_side" type ="input" value="3"/>
+		</p>
+		<p>
+			<label class="field" for="distance_between_dots">Distance between dots [<em>mm</em>]:</label>
+			<input id="distance_between_dots" type ="input" value="7"/>
+		</p>	
+		<p>
+			<label class="field" for="dot_layer_height">Dot (layer) height [<em>mm</em>]:</label>
+			<input id="dot_layer_height" type ="input" value="6"/>
+		</p>
+		<p>
+			<label class="field" for="dot_printing_initial_height">Dot initial printing height [<em>mm</em>]:</label>
+			<input id="dot_printing_initial_height" type ="input" value="1"/>
+		</p>	
+		<p>
+			<label class="field" for="dot_printing_final_height">Dot final printing height [<em>mm</em>]:</label>
+			<input id="dot_printing_final_height" type ="input" value="5"/>
+		</p>	
+		<p>
+			<label class="field" for="dot_feedrate">Printing dot feedrate [<em>mm/min</em>]:</label>
+			<input id="dot_feedrate" type ="input" value="100"/>
+		</p>	
+    
+		<p>
+			<button id="gcode" onclick="createFile();">GCode</button>
+		</p>
+
+	</div>
+
+	<script type="text/javascript" src="js/yogurt-up.js"></script>
+	<script type="text/javascript" src="js/FileSaver.js"></script>
+	
+</body>
+</html>
